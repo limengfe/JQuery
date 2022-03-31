@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            $("#btn_get").click(function() {  //设置一个按钮事件
+               var str1 = $("#txt1").val();//获取id=txt1的值
+                 alert(str1);
+            })
+           $("#btn_set").click(function () { //按钮事件2
+                var str2="初恋般的感觉"       //设置变量  
+                   $("#txt2").val(str2)  //给txt2设置str2值
+           } )
+        })
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1" value="绿叶学习网" ><br>
+    <input type="text" id="txt2"><br>
+       获取第一个文本框的值： <input type="button" id="btn_get" value="获取"><br>
+       获取第二个文本框的值：<input type="button" id="btn_set" value="设置">
+</body>
+</html>

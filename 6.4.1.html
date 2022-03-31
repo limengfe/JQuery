@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#txt").keyup(function() {//给txt绑定一个离开键盘事件
+                var str = $(this).val(); //把离开次数赋值给 str
+                $("#num").text(str.length); //在num 文本显示次数的长度
+            })
+          })
+    </script>
+</head>
+<body>
+    <input type="text" id="txt">
+    <div>
+        字符串的长度：<span id="num">0</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1,#box2{ 
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+        }
+        #box1{background-color: greenyellow;}
+        #box2{background-color: hotpink;}
+    </style>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            var top = $("#box2").offset().top;
+            var left = $("#box2").offset().left;
+            var result = "box2的距离顶部"+top+"px\n"+"box2的距离左部"+left+"px"
+           console.log(result);
+         })
+        
+    </script>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>

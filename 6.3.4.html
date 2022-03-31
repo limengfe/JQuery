@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").mousedown(function () {//点击事件
+                $("h1").css("color","red")   //h1标签颜色效果
+              })
+              $("#btn").mouseup(function () {
+                $("h1").css("color","gold")
+              })
+             })
+           
+        
+    </script>
+</head>
+<body>
+    <h1>绿了</h1>
+    <input type="button" id="btn" value="按钮">
+</body>
+</html>

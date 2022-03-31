@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            $("#two+p").css("color","red");//相邻选择器，后面选择器的第一个元素
+        })
+    </script>
+</head>
+<body>
+    <div id="one">
+        <p>子元素1</p>
+        <p>子元素2</p>
+        <div id="two">
+            <p>子元素2的子1</p>
+            <p>子元素2的子2</p>
+        </div>
+        <p>子元素3</p>
+        <p>子元素4</p>
+    </div>
+</body>
+</html>

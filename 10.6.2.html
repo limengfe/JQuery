@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            $("#sib").siblings(".select").css("color","red");
+        })
+    </script>
+</head>
+<body>
+    <ul>
+        <li class="select">红</li>
+        <li>黄</li>
+        <li id="sib">蓝</li>
+        <li>绿</li>
+        <li class="select">紫</li>
+    </ul>
+</body>
+</html>

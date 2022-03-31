@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            var flag = true;
+            $("#btn").click(function(){
+                if(flag){
+                    $("#pic").attr({"src":"/Users/20183/Desktop/JQuery/img/2.png", "alt":"日向雏田", "title":"日向雏田"});
+                    flag = false;
+                }else{
+                    $("#pic").attr({"src":"/Users/20183/Desktop/JQuery/img/1.png", "alt":"旋涡香燐", "title":"旋涡香燐"});
+                    flag = true;  
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="修改" /><br/>
+    <img id="pic" src="/Users/20183/Desktop/JQuery/img/1.png" >
+</body>
+</html>

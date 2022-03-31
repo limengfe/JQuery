@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{height: 1800px;}
+        #box1,#box2{
+            display:inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        #box1{
+            background-color: skyblue;
+        }
+        #box2{
+            background-color: violet;
+            position: fixed; /*固定*/
+        }
+    </style>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            //获取box2的顶部距离
+            var top = $("#box2").offset().top;
+            //根据滚动距离判断定位
+           $(window).scroll(function () {
+                //当滚动距离大于box2距离顶部距离时，设置固定定位
+                if ($(this).scrollTop() > top) {
+                    $("#box2").css({ "position": "fixed", "top": "0" });
+                }
+                //当滚动条小于box2的距离顶部的距离时，设置相对定位
+                else {
+                    $("#box2").css({ "position": "relative" });
+                }
+            })
+          }) 
+    </script>
+</head>
+<body>
+    <div id="box1"></div><br>
+    <div id="box2"></div>
+</body>
+</html>     

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        (function($){
+            $.extend({
+                "compare":function(a,b,c){
+                    if(a>b&&a>c){
+                        return a;
+                         } else if(b>a&&a>c){
+                             return b;
+                        }else if( c>a&&c>b){
+                              return c;
+                        }
+                     }
+            })
+        })(jQuery)
+        $(function(){
+            var result = $.compare(6,66,99);
+            console.log("最大值为："+result);
+        })
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

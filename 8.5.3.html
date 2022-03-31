@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: salmon;
+        }
+    </style>
+        <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+        <script>
+            $(function () {
+                 //简单动画
+                $("#btn1").click(function () {
+                 $("#box1").animate({"width":"100px","height":"100px"},200)
+              })
+              //累积动画
+              $("#btn2").click(function() {
+                  $("#box2").animate({"width":"+=100px","height":"+=100px"},1000)
+              })
+              })
+            
+        </script>
+    </head>
+<body>
+    <div id="box1"></div>
+    <input type="button"  id="btn1" value="简单"><br>
+    <div id="box2"></div>
+    <input type="button"  id="btn2" value="累积">
+</body>
+</html>

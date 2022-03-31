@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $( function() {
+            $(".first p").css("color","blue");//后代选择器
+        })
+    </script>
+</head>
+<body>
+    <div class="first">谁好？
+        <p>我好</p>
+        <p>你也好</p>
+        <div class="two">
+            <p>你好</p>
+            <p>我好</p>
+        </div>
+        <p>好</p>
+    </div>
+</body>
+</html>

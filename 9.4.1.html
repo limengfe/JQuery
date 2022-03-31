@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#selectAll").change(function () {  //
+                var bool = $(this).is(":checked");  //判断selectAll选框是否被选中
+                if(bool){                           //是，fruit全选
+                    $(".fruit").prop("checked","true");
+                  } else{                           //不是，fruit全部不选
+                      $(".fruit").removeProp("checked");
+                  }
+              })
+          })
+    </script>
+</head>
+<body>
+   <div>
+       <p><label><input id="selectAll" type="checkbox">全选/反选</label></p>    <!--selectAll选框-->
+       <label ><input type="checkbox" class="fruit" value="苹果">苹果</label>
+       <label ><input type="checkbox" class="fruit" value="香蕉">香蕉</label>
+       <label ><input type="checkbox" class="fruit" value="西瓜">西瓜</label>
+   </div> 
+</body>
+</html>

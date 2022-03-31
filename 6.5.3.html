@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+       $(function() {  //select选中文本内容执行
+           $("#txt1").select(function() {
+               alert("你选中了文本框的内容");
+           })
+           $("#txt2").select(function () {
+               alert("你选中了多行文本框的内容");
+             })
+       })
+    </script>
+</head>
+<body>
+    <input type="txt1" id="txt1" value="绿叶学习网，给你初恋般的感觉"><br>
+    <textarea  id="txt2" cols="20" rows="5">绿叶学习网，给你初恋般的感觉。</textarea>
+</body>
+</html>

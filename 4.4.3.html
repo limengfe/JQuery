@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:nth-child(2),ul li:nth-child(4) {
+            background-color: rebeccapurple;
+            width: 300px;
+        }
+    </style>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function(){
+                var $li1 = $("li:nth-child(2)").remove();//删除css                    html/jsp/jquery/vue.js
+                var $li2 = $("li:nth-child(3)").remove();//删除jquery                 html/jsp/vae.js
+                $($li1).insertAfter("ul li:nth-child(2)");//在第2个位置后添加css        html/jsp/css/vue.js
+                $($li2).insertBefore("ul li:nth-child(2)");//在第2个位置前添加jquery    html、jquery/jsp/css/vue.js
+            })
+        })
+    </script>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JSP</li>
+        <li>JQuery</li>
+        <li>Vue.js</li>
+    </ul>
+    <input type="button" id="btn" value="交换">
+</body>
+</html>

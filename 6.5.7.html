@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            $("select").change(function() { //选取select属性
+                var link =  $(":selected").val();//把选择的值value赋值link     表示选取被选中的下拉菜单的选项，然后获取该选项的value值
+                window.open(link);//窗口打开link
+            })
+        })
+       
+    </script>
+</head>
+<body>
+    <select >
+        <option value="https://www.baidu.com">百度</option>
+        <option value="https://www.qq.com">腾讯</option>
+        <option value="https://www.sina.com">新浪</option>
+        <option value="https://www.sohu.com">搜狐</option>
+        <option value="https://www.163.com">网易</option>
+    </select>
+</body>
+</html>

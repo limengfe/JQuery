@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function() {  //把p使用div完全包裹起来
+               $("p").wrapAll('<div style="background-color:gold;"></div>');
+            });
+        })
+    </script>
+</head>
+<body>
+    <p>HTML</p>
+    <P>CSS</P>
+    <P>JSP</P>
+    <input type="button" id="btn" value="包裹">
+</body>
+</html>

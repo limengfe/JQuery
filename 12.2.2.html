@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 800px;
+            background-color: chartreuse;
+        }
+    </style>
+     <script src="js/jquery-1.12.4.min.js"></script>
+     <script src="js/jquery.lazyload.min.js"></script>
+     <script>
+         $(function() {
+             $("img").lazyload({
+                 effect:"fadeIn"
+             });
+         })
+     </script>
+</head>
+<body>
+    <div></div>
+    <img data-original="img/haizei1.png" alt="">
+    <img data-original="img/haizei2.png" alt="">
+    <img data-original="img/haizei3.png" alt="">
+    <img data-original="img/haizei4.png" alt="">
+    <img data-original="img/haizei5.png" alt="">
+    <img data-original="img/haizei6.png" alt="">
+    <img data-original="img/haizei7.png" alt="">
+</body>
+</html>

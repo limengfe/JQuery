@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            var flag=true;
+            $("#btn").click(function () {
+              if(flag){
+                  $("#pic").attr("src","/Users/20183/Desktop/JQuery/img/2.png")
+                  flag =false;
+                 }
+                 else{
+                     $("#pic").attr("src","/Users/20183/Desktop/JQuery/img/1.png");
+                     flag=true;
+                 }
+            });
+        })
+    </script>
+</head>
+<body>
+      <input type="button"  id="btn" value="修改"><br>
+      <img src="/Users/20183/Desktop/JQuery/img/1.png" id="pic" >
+</body>
+</html>

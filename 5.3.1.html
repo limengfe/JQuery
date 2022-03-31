@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            $("#btn").click(function() {
+                var result = $("div").html();//获取div元素 等于JSP  innerHTML
+                alert(result);
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>绿叶学习网<strong>JQuery</strong></div>
+    <input type="button" id="btn" value="获取">
+</body>
+</html>

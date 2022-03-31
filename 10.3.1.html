@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style lang="">
+          p{ margin: 6px 0;}
+    </style>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+     $(function() {
+         $("#wrapper").hover(function(){  //查找子元素
+           $(this).children(".select").css("color","red")//鼠标悬浮
+         },function() {
+             $(this).children(".select").css("color","black");//鼠标移开
+         })
+          
+     })
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <p>子元素</p>
+        <p class="select">子元素</p>
+        <div>
+            <p>孙元素</p>
+        <p class="select">子子元素</p>  
+        </div>
+       
+        <p class="select">子元素</p>
+        <p>子元素</p>
+    </div>
+</body>
+</html>

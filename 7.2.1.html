@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            //基本事件
+            $("#btn").click(function() {
+                alert("绿叶,给你初恋般的感觉！")
+            })
+            //解绑
+           $("#btn_off").click(function() {
+               $("#btn").off("click");   //把btn  解绑click
+           });
+        })
+    </script>
+</head>
+<body>
+     <input type="button" id="btn" value="绑定"> 
+     <input type="button" id="btn_off" value="解绑">  
+</body>
+</html>

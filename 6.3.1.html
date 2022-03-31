@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            line-height: 24px;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            text-align: center;
+            border-radius: 3px;
+            background-color: rgb(184, 201, 144);
+            color: rgb(7, 70, 33);
+            cursor: pointer;
+        }
+        div:hover {background-color: rgb(65, 6, 18);}  /*悬浮效果*/
+    </style>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+     <script>
+         $(function () {
+             $("div").click(function () {//点击效果
+                 alert("点我了")
+               })
+           })
+     </script>
+</head>
+<body>
+    <div>调试代码</div>
+</body>
+</html>

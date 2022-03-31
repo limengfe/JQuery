@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 300px;}
+        h3{
+            text-align: center;
+            padding: 10px;
+            background-color: cornsilk;
+        }
+        h3:hover{
+            background-color: darkblue;
+            cursor: pointer;
+        }
+        p{
+            background-color: red;
+            padding: 8px;
+            line-height: 24px;
+            display: none;
+        }
+    </style>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+       $(function() {
+           //设置变量调解滑动状态。
+           var flag = 0;
+           $("h3").click(function() {
+               if(flag == 0){
+                   $("p").slideDown()
+                   flag = 1
+               }
+               else {
+                   $("p").slideUp();
+                   flag = 0;
+               }
+           })
+       })
+    </script>
+</head>
+<body>
+    <div>
+        <h3>绿叶学习网</h3>
+        <p>绿叶学习网成立于2015年4月1日，是一个最富有活力的Web技术学习网站。
+            在这里，我们只提供互联网最好的Web技术教程和最佳的学习体验。
+            每一个教程、每一篇文章、甚至每一个知识点，都体现绿叶精品的态度。
+            没有最好，但是我们可以做到更好！</p>
+    </div>
+</body>
+</html>

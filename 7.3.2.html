@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: cornsilk;
+            cursor: pointer;
+        }
+        div{
+            display: none;
+            padding: 10px;
+            border: 1px solid black;
+            text-indent: 32px;
+        }
+    </style>
+        <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+        <script>
+            $(function() {
+                $("h3").hover(function() {
+                    $("div").css("display","block");
+                },function() {
+                    $("div").css("display","none")
+                })
+            })
+        </script>
+</head>
+<body>
+    <h3>绿叶，给你初恋般的感觉</h3>
+    <div>绿叶学习网成立于2015年4月1日，是一个最富有活力的Web技术学习网站。
+        在这里，我们只提供互联网最好的Web技术教程和最佳的学习体验。
+        每一个教程、每一篇文章、甚至每一个知识点，都体现绿叶精品的态度。
+         没有最好，但是我们可以做到更好！</div>
+</body>
+</html>

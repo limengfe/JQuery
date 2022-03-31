@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{ color: cyan; font-weight: bold;}
+    </style>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function() {
+                $("p").attr("class","content")//添加class属性,值为content   添加CSS效果。
+            });
+            $("#btn_remove").click(function () {
+                $("p").removeAttr("class");
+              })
+          })
+    </script>
+</head>
+<body>
+     <p>绿叶学习网</p>
+     <input type="button"  id="btn" value="添加属性"> 
+     <input type="button" name="" id="btn_remove" value="移除属性">
+</body>
+</html>

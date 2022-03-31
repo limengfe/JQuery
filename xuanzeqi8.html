@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            $("li+li").css("border-top","2px solid red");//li后面元素第一个li
+        })
+    </script>
+</head>
+<body>
+    <ul>
+        <li>元素1</li>
+        <li>元素2</li>
+        <li>元素3</li>
+        <li>元素4</li><!--最后一个元素后面没有元素，无法实现效果-->
+    </ul>
+</body>
+</html>

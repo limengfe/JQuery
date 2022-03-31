@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            $(document).keydown(function(e){
+                if(e.keyCode == 38 ||e.keyCode == 87){
+                    $("span").text("上")
+                } else if (e.keyCode == 39 || e.keyCode == 68) {
+                    $("span").text("右");
+                } else if (e.keyCode == 40 || e.keyCode == 83) {
+                    $("span").text("下");
+                } else if (e.keyCode == 37 || e.keyCode == 65) {
+                    $("span").text("左");
+                } else {
+                    $("span").text("");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>你控制的方向是：
+        <span style="color:red"></span>
+
+    </div>
+</body>
+</html>

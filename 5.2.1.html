@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{font-weight: bold;}
+    </style>
+    <script src="/Users/20183/Desktop/JQuery/js/jquery-1.12.4.min.js"></script>
+    <script>
+       $(function() {
+           $("#btn").click(function () { //给btn选择器设置一个点击事件
+               var result = $("p").css("font-weight");   //把CSS属性赋值给一个变量
+               alert("font-weight取值为"+result);  //警告窗口弹出
+             });
+       })
+    </script>
+</head>
+<body>
+    <p>绿叶学习网</p>
+    <input type="button"  id="btn" value="获取">
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{ padding:0; margin:0;}
+         .title{ list-style-type: none; overflow: hidden;}
+         .title li{
+             float: left;
+             width: 100px;
+             height: 36px;
+             line-height: 36px;
+             text-align: center;
+             color: white;
+             cursor: pointer;
+
+         }
+         .title li:nth-child(1){background-color: violet;}
+         .title li:nth-child(2){background-color: yellow;}
+         .title li:nth-child(3){background-color: aqua;}
+         .content{
+             width: 298px;
+             border: 1px solid black;
+         }
+         .content li{display: none;}
+         li.current{display: block;}
+      
+    </style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            $(".title li").click(function() {
+                var n = $(this).index();
+                $(".content li").removeClass("current").eq(n).addClass("current");
+                //             移除li的current的值       获取索引为n的li元素     添加li元素
+            })
+        })
+    </script> 
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="title">
+            <li>娱乐</li>
+            <li>经济</li>
+            <li>军事</li>
+        </ul>
+        <ul class="content">
+            <li class="current">这是“娱乐”栏目<br/>这是“娱乐”栏目<br/>这是“娱乐”栏目</li>
+            <li>这是“经济”栏目<br>这是“经济”栏目<br/>这是“经济”栏目</li>
+            <li>这是“军事”栏目<br/>这是“军事”栏目<br/>这是“军事”栏目</li>
+        </ul>
+    </div>
+</body>
+
+</html>

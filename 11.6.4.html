@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () { 
+            var person = {
+                name:"li",
+                age:"18"
+            }
+            console.log($.isPlainObject(person));
+            function box(width,height){
+                this.width = width;
+                this.height=height;
+            }
+            var box = new box(100,200);
+            console.log($.isPlainObject(box));
+         })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

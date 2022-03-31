@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            var a = [3, 9, 1, 12, 50, 21];
+            var b = [2, 9, 1, 16, 50, 32];
+            var result = $.grep(a, function(value,index){
+                if(b.indexOf(value) >=0){
+                    return true;
+                }
+            },false);
+            console.log(result);
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
